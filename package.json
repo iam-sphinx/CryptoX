@@ -1,0 +1,54 @@
+{
+  "name": "koin-x-assignment",
+  "version": "1.0.0",
+  "description": "backend assignment koin x assignment",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "dev": "nodemon",
+    "build": "npm install && npx tsc",
+    "start": "node dist/index.js",
+    "format": "prettier --write ."
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "keywords": [
+    "koin",
+    "x"
+  ],
+  "author": "kandarp mishra",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "chalk": "^5.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "eslint": "^9.12.0",
+    "express": "^4.21.1",
+    "express-validator": "^7.2.0",
+    "mongodb": "^6.9.0",
+    "mongoose": "^8.7.1",
+    "save-dev": "^0.0.1-security",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.7.5",
+    "husky": "^9.1.6",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.2.5",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.3"
+  }
+}
